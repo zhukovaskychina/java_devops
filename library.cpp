@@ -13,7 +13,6 @@
 #define MAX_TOKEN_LENGTH        80
 #define MAX_METHOD_NAME_LENGTH  256
 
-
 #define AGENTNAME               "devops"
 #define AGENTLIB                "-agentlib:" AGENTNAME
 
