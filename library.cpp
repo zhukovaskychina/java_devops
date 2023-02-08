@@ -104,7 +104,7 @@ print_usage(void) {
                    "\n"
                    "Option Name and Value  Description                                                  Default\n"
                    "---------------------  -----------------------------------------                    -------\n"
-                   "packageName=samples    指定的包，com.pingan.ide.aicsp.xx.controller                     all\n"
+                   "packageName=samples    指定的包，com.xx.ide.aicsp.xx.controller                     all\n"
                    "filePath=samplesFilePath 指定路径名称，用于写入异常，比如'/wls81/user/ssss/'，捕捉到异常后会在这里写入  "
 
     );
@@ -115,12 +115,11 @@ print_usage(void) {
 static void parse_agent_options(char *options) {
 
 
-
-
     char token[MAX_TOKEN_LENGTH];
     char *next;
 
-    printf("options {}",options);
+
+    printf("options {%s}\n", options);
     /* Parse options and set flags in gdata */
     if (options == NULL) {
         print_usage();
